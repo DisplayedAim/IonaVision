@@ -704,7 +704,7 @@ if __name__ == "__main__":
     webcam = cameras[0]
     stream = streams[0]
     #Start thread reading camera
-    cap = WebcamVideoStream(webcam, cameraServer, image_width, image_height).start()
+    cap = WebcamVideoStream(webcam, stream, image_width, image_height).start()
 
     # (optional) Setup a CvSource. This will send images back to the Dashboard
     # Allocating new images is very expensive, always try to preallocate
